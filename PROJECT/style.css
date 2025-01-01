@@ -1,0 +1,294 @@
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header Styles */
+
+
+
+header {
+    background-color: #000000;
+    color: #fff;
+    padding: 5px 0;
+}
+
+.header-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+header img {
+    width: 400px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: left;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 3px;
+}
+
+nav ul li a:hover {
+    background-color: #34495e;
+}
+
+#hero {
+    background-color: black;
+    background-image: url('img/main.png');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding-top: 300px;
+}
+
+.hero-content h2 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    color: #12e60b;
+}
+
+.cta-button {
+    background-color: #e74c3c;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #c0392b;
+}
+
+#notice {
+    font-size: large;
+    text-align: center;
+    background-color: #000000;
+    color: yellow;
+    text-decoration: none;
+    animation: moveSection 2s infinite alternate;
+}
+@keyframes moveSection {
+    from { letter-spacing: 3px; }
+    to { letter-spacing: 7px; }
+    
+}
+/* Courses Section */
+#courses {
+    padding: 60px 20px;
+    background-color: #6d7454;
+    text-align: center;
+}
+
+#courses h2 {
+    font-size: 2em;
+    margin-bottom: 40px;
+    color: hsl(0, 0%, 100%);
+}
+
+.course-list {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 30px ;
+}
+
+.course {
+    background-color: #fff;
+    border: 1px solid #320dd4;
+    padding: 10px;
+    margin: 8px;
+    flex-basis: 25%;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    border-radius: 5px;
+    transition: transform 0.2s;
+}
+
+.course:hover {
+    transform: translateY(-10px);
+}
+
+
+.course h3 {
+    color: #000000;
+    margin-top: 0;
+    font-size: x-large;
+}
+
+.enroll-button {
+    background-color: #16bd1e;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 8px;
+    display: inline-block;
+    margin-top: 15px;
+    transition: background-color 0.2s;
+}
+
+.enroll-button:hover {
+    background-color: #2e80cc;
+}
+
+/* student reviews */
+#testimonials {
+    padding: 60px 20px;
+    background-color: #f4f4f4;
+    text-align: center;
+    background-image: url('img/test.png');
+    margin-top: 10px;
+}
+
+#testimonials h2 {
+    font-size: 2.5em;
+    margin-bottom: 40px;
+    color: #d5e223;
+}
+
+.testimonial-list {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.testimonial {
+    background-color: #fffcfc;
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin: 5px;
+    flex-basis: 20%;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    text-align: center;
+}
+
+.testimonial p {
+    font-style: italic;
+    font-size: 1.1em;
+}
+
+.testimonial h4 {
+    margin-top: 10px;
+    color: #1f1c1c;
+}
+
+/* Contact Section */
+#contact {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #ecf0f1;
+    background-image: url('img/cc.png');
+}
+
+#contact h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #00bba2;
+}
+
+#contact p {
+    margin-bottom: 40px;
+    color: #eeff00;
+    font-size: x-large;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form .submit-button {
+    background-color: #2980b9;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+form .submit-button:hover {
+    background-color: #3498db;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #404142;
+    color: #fff;
+    text-align: left;
+    padding: 20px 0;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    text-align: left;
+}
+
+
+footer p {
+    margin: 0;
+    font-size: 0.9em;
+    text-align: right;
+}
+
+footer nav ul {
+    list-style: none;
+    margin: 10px 0 0 0;
+    padding: 0;
+    display: flex;
+    justify-content: left;
+}
+
+footer nav ul li {
+    margin-left: 20px;
+}
+
+footer nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer nav ul li a:hover {
+    text-decoration: underline;
+}
